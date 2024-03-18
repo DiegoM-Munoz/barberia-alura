@@ -1,0 +1,331 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: auto;
+    font-style: normal;
+}
+
+header{
+    background-color: #CCCCCC;
+    padding: 20px 0;
+}
+
+.caja{
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+}
+
+nav{
+    position: absolute;
+    top: 115px;
+    right: 0;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 21px;
+    /* Desactiva la decoración por defecto del vinculo */
+    text-decoration: none;
+}
+/* Destaca el elemento cuando el mouse se posiciona sobre él*/
+nav a:hover {
+    color: #c78c19;
+    text-decoration: underline;
+}
+
+.productos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.productos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    /*Este es el orden de las propiedades de border */
+    /* border-width: 2px;
+    border-style: solid;
+    border-color: #000000; */
+    border-radius: 10px;
+}
+
+.productos li:hover {
+    border-color: #c78c19;
+}
+
+.productos li:active {
+    border-color: #088c19;
+}
+
+.productos li:hover h2 {
+    font-size: 36px;
+}
+
+.productos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.producto-descripcion{
+    font-size: 18px;
+}
+
+.producto-precio{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    /* En el CSS, cuando hacemos referencia a la dirección de una imagen, usamos el valor url, no el valor src. */
+    background: url(imagenes/bg.jpg);
+    padding: 40px;
+    width: auto;
+}
+
+.copyright {
+    color: #CCCCCC;
+    font-size: 13px;
+    margin: 20px;
+}
+
+/* AQUÍ INICIAN LOS ESTILOS DE LA PÁGINA DE CONTACTO */
+
+form {
+    margin: 42px 0 0 10px;
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    /* Las medidas se indican en sentido de las agujas del reloj (top, right, bottom, left)*/
+    margin: 0 0 10px;
+}
+
+.input-padron {
+    display: block;
+    margin: 0 0 22px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    margin: 0   0   20px    0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: orange;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+
+}
+.enviar:hover{
+    cursor: pointer;
+    background: darkorange;
+    transform: scale(1.2);
+}
+
+table {
+    margin: 40px 40px;
+}
+
+thead {
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid #000000;
+    padding: 5px;
+}
+
+/* CSS Para la página de Inicio */
+
+.banner{
+    width: 100%;
+}
+
+.principal{
+    padding: 2em;
+    background-color: #FEFEFE;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.titulo-principal{
+    text-align: center;
+    font-size: 2em;
+    margin: .5em 0 1em;
+    clear: left;
+}
+
+.principal p{
+    margin: 0 0 1em;
+}
+
+.principal strong{
+    font-weight: bold;
+}
+
+.principal em{
+    font-style: italic;
+}
+
+/* La propiedad calc() en CSS permite realizar cálculos en propiedades que aceptan valores numéricos. Esta función es especialmente útil para dimensiones y posiciones, ya que puedes combinar valores con operadores matemáticos para obtener un resultado final. La sintaxis básica es:     property: calc(expresion);
+.utensilios{
+    width: calc(120px * 4);
+    float: left;
+    margin: 0 20px 20px 0;
+} */
+
+.utensilios{
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+/* Los SELECTORES AVANZADOS en CSS permiten seleccionar elementos de manera más específica y compleja que los selectores básicos.
+img ~ #mision{
+    background-color: #088c19;
+}
+main p:not(#mission) {
+} */
+
+.mapa{
+    padding: 3e, 0;
+    /* el orden de los valores de gradient son (grados de inclinación del efecto, colores y porcentaje a ocupar dentro del efecto (45deg, orange 50%, etc...)) */
+    background: linear-gradient(#FEFEFE, #888888);
+}
+
+/* Los pseudo-elementos se usan para modificar un elemento de una etiqueta sin necesidad de modificar el código HTML */
+/* .titulo-principal::first-letter{
+    font-size: 1.1em;
+    font-weight: bold;
+} */
+
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.mapa-contenido{
+    width: 940px;
+    margin: 0 auto;
+
+}
+.diferenciales{
+    padding: 3em 0;
+    background-color: #888888;
+}
+
+.contenido-diferenciales{
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-diferenciales{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.items{
+    line-height: 1.5;
+}
+
+/* Los pseudo-elementos se usan para modificar un elemento de una etiqueta sin necesidad de modificar el código HTML */
+.items::before {
+    content: "★ ";
+}
+
+/* Las pseudo-clases permiten añadir estilos a etiquetas completas, sin necesidad de modificar el HTML*/
+.items:first-child{
+    font-weight: bold;
+}
+
+.imagen-diferenciales{
+    width: 60%;
+    transition: 400ms;
+    /* orden de valores en propiedad box-shadow: (horizontal) (vertical) (blur) (spread) (colour), se pueden agregar más sombras separadas por "," */
+    box-shadow: -10px 10px 30px 15px #000000 /*, 10px -10px 50px 10px red ;*/
+}
+
+.imagen-diferenciales:hover{
+    opacity: 0.3;
+}
+
+.video{
+    width: 560px;
+    margin: 1em auto;
+}
+
+@media screen and (max-width: 480px){
+    h1{
+        text-align: center;
+    }
+
+    nav{
+        position: static;
+        width: 99vw;
+    }
+
+    nav ul{
+        text-align: inherit;
+    }
+
+    .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video{
+        width: auto;
+    }
+
+    .lista-diferenciales, .imagen-diferenciales{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .mapa p{
+        margin: auto auto 2em;
+        width: 90vw;
+    }
+    .diferenciales {
+        padding: .5em 0;
+    }
+
+    /* MEDIA PARA PRODCUTOS */
+    .productos {
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        padding: 40px;
+    }
+
+    .productos li{
+        margin: 10px 0;
+        width: 100%;
+    }
+}
